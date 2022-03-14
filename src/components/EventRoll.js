@@ -104,7 +104,7 @@ export default function UfePediaRoll() {
       query={graphql`
         query EventQueryForEventPage {
           allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
+            sort: { order: DESC, fields: [frontmatter___startAt] }
             filter: { frontmatter: { templateKey: { eq: "event-post" } } }
           ) {
             edges {
