@@ -66,4 +66,14 @@ pricing:
       price: dawdwad
       items:
         - dwadwad
+    - plan: өйуыөб
+      price: "эуыэб "
+      description: бцй бцй бйцб
+      items:
+        - бцйбцйбцйбцй
+    - plan: plan 4
+      price: dwad
+      description: dwad
+      items:
+        - dwad
 ---
