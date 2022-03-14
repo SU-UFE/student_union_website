@@ -22,8 +22,8 @@ intro:
     libero facilisis a. Ut eget rhoncus lacus, et commodo purus.
 
 main:
-  heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
-    gravida tortor, vel suscipit turpis. Vestibulum nec augue id elit '
+  heading: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
+    gravida tortor, vel suscipit turpis. Vestibulum nec augue id elit "
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac gravida
     tortor, vel suscipit turpis. Vestibulum nec augue id elit
@@ -48,8 +48,7 @@ testimonials:
 full_image: /img/apple-touch-icon.jpg
 pricing:
   heading: dwad
-  description:
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
     gravida tortor, vel suscipit turpis. Vestibulum nec augue id elit dignissim
     faucibus sit amet sit amet est. Sed condimentum metus nec magna dictum
     posuere. Sed rutrum urna at fermentum consectetur. Praesent posuere
@@ -62,4 +61,9 @@ pricing:
       description: description
       items:
         - item
+    - plan: dwad
+      description: dwad
+      price: dawdwad
+      items:
+        - dwadwad
 ---
