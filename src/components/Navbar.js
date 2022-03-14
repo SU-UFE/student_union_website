@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import zurag from '../../static/img/reallogo.svg'
+import Search from './GatsbySearch'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -105,9 +106,11 @@ const Navbar = class extends React.Component {
                 Санал хүсэлт
               </Link>
             </div>
-          </div>
-          <div class='navbar-end'>
-            <div class='navbar-item'></div>
+            <div class='navbar-end'>
+              <div class='navbar-item'>
+                <Search />
+              </div>
+            </div>
           </div>
         </div>
       </nav>
