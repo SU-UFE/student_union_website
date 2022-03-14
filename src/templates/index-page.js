@@ -50,7 +50,7 @@ export const IndexPageTemplate = ({
                     <h3 className="has-text-weight-semibold is-size-2">
                       Арга хэмжээ
                     </h3>
-                    <div style={{ height: "700px" }}>
+                    <div style={{ height: "44rem" }}>
                       <Calendar />
                     </div>
 

@@ -22,7 +22,7 @@ const ClubsIndex = () => {
       <section className="section">
         <div className="container">
           <div className="content">
-            <div style={{ height: "700px" }}>
+            <div style={{ height: "44rem" }}>
               <Calendar />
             </div>
             <EventRoll />
