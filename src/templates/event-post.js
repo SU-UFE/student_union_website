@@ -28,15 +28,10 @@ const ClubPageTemplate = ({ data, location }) => {
   };
   const timeFormatter = (dt) => {
     dt = new Date(dt);
-    var year = dt.getFullYear();
-    var month = dt.getUTCMonth() + 1;
-    var day = dt.getDate();
 
     var time = dt.getHours();
     var minute = dt.getMinutes();
 
-    month = month < 10 ? "0" + month : month;
-    day = day < 10 ? "0" + day : day;
     time = time < 10 ? "0" + time : time;
     minute = minute < 10 ? "0" + minute : minute;
 

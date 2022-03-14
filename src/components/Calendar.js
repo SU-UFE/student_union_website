@@ -7,7 +7,6 @@ import "kalend/dist/styles/index.css"; // import styles
 const Calendar = ({ data }) => {
   const { edges: events } = data.allMarkdownRemark;
   const final_events = [];
-  console.log(events);
   events.forEach((element) => {
     final_events.push(
       Object.assign(element.node.frontmatter, element.node.fields)
