@@ -7,7 +7,7 @@ const UfePediaIndex = () => {
       <div
         className='full-width-image-container margin-top-0'
         style={{
-          backgroundImage: `url('/img/huluub.jpg')`,
+          backgroundImage: `url('/img/ufepedia.jpg')`,
         }}
       >
         <h1

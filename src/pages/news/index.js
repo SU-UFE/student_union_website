@@ -10,7 +10,7 @@ export default class BlogIndexPage extends React.Component {
         <div
           className='full-width-image-container margin-top-0'
           style={{
-            backgroundImage: `url('/img/medee.jpg')`,
+            backgroundImage: `url('/img/ufepedia.jpg')`,
           }}
         >
           <h1
@@ -22,7 +22,7 @@ export default class BlogIndexPage extends React.Component {
               padding: '1rem',
             }}
           >
-            Мэдээ мэдээлэл
+            МЭДЭЭ МЭДЭЭЛЭЛ
           </h1>
         </div>
         <section className='section'>

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'СЭЗИС Оюутны Холбоо ТББ',
-    description: 'СЭЗИС Оюутны Холбоо ТББ',
+    description:
+      'СЭЗИС Оюутны Холбоо ТББ UFE SEZIS Оюутны клуб, oyutnii, oyutan, Oyutnii Holboo, mongol oyutan, sanhuu ediin zasag',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

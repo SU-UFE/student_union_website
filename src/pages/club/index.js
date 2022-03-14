@@ -1,3 +1,4 @@
+import { filter } from 'lodash'
 import React from 'react'
 import ClubRoll from '../../components/ClubRoll'
 import Layout from '../../components/Layout'
@@ -7,7 +8,7 @@ const ClubsIndex = () => {
       <div
         className='full-width-image-container margin-top-0'
         style={{
-          backgroundImage: `url('/img/huluub.jpg')`,
+          backgroundImage: `url('/img/ufepedia.jpg')`,
         }}
       >
         <h1

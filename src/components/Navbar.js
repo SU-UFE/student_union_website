@@ -40,14 +40,6 @@ const Navbar = class extends React.Component {
       >
         <div className='container a py-3 '>
           <div className='navbar-brand'>
-            <Link
-              to='/'
-              className='navbar-item'
-              title='Logo'
-              style={{ padding: '0' }}
-            >
-              <img src={zurag} alt='holboo' style={{ width: '230px' }} />
-            </Link>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -84,7 +76,7 @@ const Navbar = class extends React.Component {
                     </Link>
                     <hr className='navbar-divider' />
                     <Link className='navbar-item' to='/holbogdoh'>
-                      Холбогдох
+                      Бидэнтэй холбогдох
                     </Link>
                   </div>
                 </Link>
@@ -107,7 +99,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div class='navbar-end'>
-              <div class='navbar-item a' style={{ position: 'fixed' }}>
+              <div class='navbar-item ' style={{ position: 'fixed' }}>
                 <Search />
               </div>
             </div>

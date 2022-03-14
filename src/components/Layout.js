@@ -24,13 +24,13 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel='icon'
           type='image/png'
-          href={`${withPrefix('/')}img/favicon-32x32.png`}
+          href={`${withPrefix('/')}img/reallogo.svg`}
           sizes='32x32'
         />
         <link
           rel='icon'
           type='image/png'
-          href={`${withPrefix('/')}img/favicon-16x16.png`}
+          href={`${withPrefix('/')}img/reallogo.svg`}
           sizes='16x16'
         />
 
@@ -44,10 +44,10 @@ const TemplateWrapper = ({ children }) => {
         <meta property='og:type' content='business.business' />
         <meta property='og:title' content={title} />
         <meta property='og:url' content='/' />
-        <meta
+        {/* <meta
           property='og:image'
           content={`${withPrefix('/')}img/og-image.jpg`}
-        />
+        /> */}
       </Helmet>
       <Navbar />
       <main>{children}</main>

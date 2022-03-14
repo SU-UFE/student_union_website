@@ -82,7 +82,7 @@ export default class Index extends React.Component {
                       name={'email'}
                       onChange={this.handleChange}
                       id={'email'}
-                      required={false}
+                      required={true}
                     />
                   </div>
                 </div>
