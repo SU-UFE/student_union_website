@@ -1,36 +1,39 @@
-import React from "react";
-import EventRoll from "../../components/EventRoll";
-import Layout from "../../components/Layout";
-import loadable from "@loadable/component";
-const Calendar = loadable(() => import("../../components/Calendar"));
+import React from 'react'
+import EventRoll from '../../components/EventRoll'
+import Layout from '../../components/Layout'
+import loadable from '@loadable/component'
+const Calendar = loadable(() => import('../../components/Calendar'))
 const ClubsIndex = () => {
   return (
     <Layout>
-      <div className="container">
+      <div className='container'>
         <h1
-          className="has-text-weight-bold is-size-1"
+          className='has-text-weight-bold is-size-1'
           style={{
-            color: "black",
-            padding: "1rem",
-            marginTop: "1rem",
+            color: 'black',
+            padding: '1rem',
+            marginTop: '1rem',
           }}
         >
           Арга хэмжээ
         </h1>
       </div>
 
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <div style={{ height: "700px" }}>
+      <section className='section'>
+        <div className='container'>
+          <div className='content'>
+            <div style={{ height: '700px' }}>
               <Calendar />
             </div>
+            <br />
+            <hr />
+            <br />
             <EventRoll />
           </div>
         </div>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
-export default ClubsIndex;
+export default ClubsIndex

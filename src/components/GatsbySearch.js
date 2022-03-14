@@ -12,7 +12,11 @@ class Search extends Component {
     const ResultList = () => {
       if (this.state.results.length > 0) {
         return this.state.results.map((page, i) => (
-          <div className='box ' key={i} style={{ position: 'fixed' }}>
+          <div
+            className=''
+            key={i}
+            style={{ backgroundColor: 'white', padding: '10px' }}
+          >
             <hr className='navbar-divider' />
             <Link to={page.url} className='link'>
               <h4>{page.title}</h4>
@@ -20,12 +24,20 @@ class Search extends Component {
           </div>
         ))
       } else if (this.state.query.length > 2) {
-        return 'Хайлт олдсонгүй ' + this.state.query
+        return (
+          <div style={{ backgroundColor: 'white', padding: '10px' }}>
+            {`Хайлт олдсонгүй  ` + this.state.query}
+          </div>
+        )
       } else if (
         this.state.results.length === 0 &&
         this.state.query.length > 0
       ) {
-        return 'Дор хаяж 3 үсэг бичнэ үү'
+        return (
+          <div style={{ backgroundColor: 'white', padding: '10px' }}>
+            3-с дээш үсэг бичнэ үү
+          </div>
+        )
       } else {
         return ''
       }

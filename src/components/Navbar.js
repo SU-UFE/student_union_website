@@ -107,7 +107,7 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div class='navbar-end'>
-              <div class='navbar-item'>
+              <div class='navbar-item a' style={{ position: 'fixed' }}>
                 <Search />
               </div>
             </div>
