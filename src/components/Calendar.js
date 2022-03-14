@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link, StaticQuery } from "gatsby";
+import { graphql, Link, StaticQuery, navigate } from "gatsby";
 
 import Kalend, { CalendarView } from "kalend";
 import "kalend/dist/styles/index.css"; // import styles
@@ -7,12 +7,14 @@ import "kalend/dist/styles/index.css"; // import styles
 const Calendar = ({ data }) => {
   const { edges: events } = data.allMarkdownRemark;
   const final_events = [];
+  console.log(events);
   events.forEach((element) => {
-    final_events.push(element.node.frontmatter);
+    final_events.push(
+      Object.assign(element.node.frontmatter, element.node.fields)
+    );
   });
-  console.log(final_events);
   const onEventClick = (e) => {
-    <Link to="/events"></Link>;
+    navigate(e.slug);
   };
   // const events = [
   //   {
@@ -63,10 +65,9 @@ export default function Events() {
                   slug
                 }
                 frontmatter {
-                  title
+                  summary: title
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
-                  summary
                   startAt
                   endAt
                   color

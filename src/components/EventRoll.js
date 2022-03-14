@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
-
+import time from "../../static/img/time.svg";
 const EventRoll = ({ data }) => {
   const dateFormatter = (dt) => {
     dt = new Date(dt);
@@ -18,6 +18,22 @@ const EventRoll = ({ data }) => {
     minute = minute < 10 ? "0" + minute : minute;
 
     return `${year}/${month}/${day} ${time}:${minute}`;
+  };
+  const timeFormatter = (dt) => {
+    dt = new Date(dt);
+    var year = dt.getFullYear();
+    var month = dt.getUTCMonth() + 1;
+    var day = dt.getDate();
+
+    var time = dt.getHours();
+    var minute = dt.getMinutes();
+
+    month = month < 10 ? "0" + month : month;
+    day = day < 10 ? "0" + day : day;
+    time = time < 10 ? "0" + time : time;
+    minute = minute < 10 ? "0" + minute : minute;
+
+    return `${time}:${minute}`;
   };
   const { edges: posts } = data.allMarkdownRemark;
   return (
@@ -45,23 +61,30 @@ const EventRoll = ({ data }) => {
                 ) : null}
                 <p className="card-content">
                   <Link
-                    className="title has-text-primary is-size-4"
+                    className="title has-text-primary is-size-4 is-block"
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}
                   </Link>
                   <span> </span>
                   <span
-                    className="content subtitle is-size-5 is-block"
+                    className="content subtitle is-size-5 "
                     style={{ margin: 0 }}
                   >
-                    Эхлэх хугацаа: {dateFormatter(post.frontmatter.startAt)}
+                    <img
+                      className="fas fa-lg"
+                      src={time}
+                      alt="time"
+                      style={{ width: "1em", height: "1em" }}
+                    />{" "}
+                    {dateFormatter(post.frontmatter.startAt)}
                   </span>
+                  -
                   <span
-                    className="content subtitle is-size-5 is-block"
+                    className="content subtitle is-size-5 "
                     style={{ margin: 0 }}
                   >
-                    Дуусах хугацаа: {dateFormatter(post.frontmatter.startAt)}
+                    {timeFormatter(post.frontmatter.endAt)}
                   </span>
                 </p>
               </header>
