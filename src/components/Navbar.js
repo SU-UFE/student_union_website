@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import zurag from '../../static/img/reallogo.svg'
 import Search from './GatsbySearch'
 
 const Navbar = class extends React.Component {

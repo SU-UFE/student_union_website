@@ -1,4 +1,3 @@
-import { filter } from 'lodash'
 import React from 'react'
 import ClubRoll from '../../components/ClubRoll'
 import Layout from '../../components/Layout'
@@ -6,7 +5,7 @@ const ClubsIndex = () => {
   return (
     <Layout>
       <div
-        className='full-width-image-container margin-top-0'
+        className='full-width-image-container has-text-centered margin-top-0'
         style={{
           backgroundImage: `url('/img/ufepedia.jpg')`,
         }}
@@ -14,13 +13,13 @@ const ClubsIndex = () => {
         <h1
           className='has-text-weight-bold is-size-1'
           style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
+            //boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+            //backgroundColor: '#f40',
             color: 'white',
-            padding: '1rem',
+            //padding: '1rem',
           }}
         >
-          Клубуудын мэдээлэл
+          КЛУБҮҮДИЙН МЭДЭЭЛЭЛ
         </h1>
       </div>
       <section className='section'>
