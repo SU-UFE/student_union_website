@@ -46,7 +46,7 @@ class Search extends Component {
     return (
       <div className={this.props.classNames}>
         <input
-          className='input is-primary  is-rounded'
+          className='input   is-rounded'
           type='text'
           onChange={this.search}
           placeholder={'Хайх...'}

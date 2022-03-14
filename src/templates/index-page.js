@@ -1,33 +1,32 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
-import Layout from "../components/Layout";
-import Features from "../components/Features";
-import FullWidthImage from "../components/FullWidthImage";
-import NewsRoll from "../components/IndexPageNewsRoll";
-import loadable from "@loadable/component";
-const Calendar = loadable(() => import("./../components/Calendar"));
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link, graphql } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
+import Layout from '../components/Layout'
+import Features from '../components/Features'
+import FullWidthImage from '../components/FullWidthImage'
+import NewsRoll from '../components/IndexPageNewsRoll'
+import loadable from '@loadable/component'
+const Calendar = loadable(() => import('./../components/Calendar'))
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
+
   subheading,
-  mainpitch,
-  description,
+
   intro,
 }) => {
-  const heroImage = getImage(image) || image;
+  const heroImage = getImage(image) || image
 
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
                   {/* tur comment */}
                   {/* <div className='content'>
                     <div className='tile'>
@@ -46,21 +45,21 @@ export const IndexPageTemplate = ({
                     </div>
                   </div> */}
 
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                  <div className='column is-12'>
+                    <h3 className='has-text-weight-semibold is-size-2'>
                       Арга хэмжээ
                     </h3>
-                    <div style={{ height: "44rem" }}>
+                    <div style={{ height: '44rem' }}>
                       <Calendar />
                     </div>
 
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className='has-text-weight-semibold is-size-2'>
                       Мэдээ мэдээлэл
                     </h3>
 
                     <NewsRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/news">
+                    <div className='column is-12 has-text-centered'>
+                      <Link className='btn' to='/news'>
                         Бүх мэдээ
                       </Link>
                     </div>
@@ -73,8 +72,8 @@ export const IndexPageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -86,10 +85,10 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-};
+}
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -103,8 +102,8 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  );
-};
+  )
+}
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -112,9 +111,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -148,4 +147,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
