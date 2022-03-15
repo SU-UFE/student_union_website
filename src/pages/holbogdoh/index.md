@@ -3,6 +3,6 @@ templateKey: about-page
 path: /holbogdoh
 title: Холбогдох
 ---
-Утас: [8](fasef.com)94984684654651
+Утас: [](fasef.com)86680727 (Тэргүүн Т.Янжинлхам)
 
-Мейл: [Энд дарна уу](fasef.com)
+Мейл: [Энд дарна уу](student_union@ufe.edu.mn)
