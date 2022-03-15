@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-flexsearch',
       options: {
-        languages: ['mn'],
+        languages: ['en'],
         type: 'MarkdownRemark',
         fields: [
           {
@@ -33,10 +33,10 @@ module.exports = {
             indexed: true,
             resolver: 'frontmatter.title',
             attributes: {
-              encode: 'balance',
-              tokenize: 'strict',
+              encode: 'default',
+              tokenize: 'forward',
               threshold: 6,
-              depth: 2,
+              depth: 3,
             },
             store: true,
           },
@@ -48,9 +48,9 @@ module.exports = {
               encode: 'balance',
               tokenize: 'strict',
               threshold: 6,
-              depth: 2,
+              depth: 3,
             },
-            store: false,
+            store: true,
           },
           {
             name: 'url',
