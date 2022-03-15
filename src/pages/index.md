@@ -14,10 +14,10 @@ mainpitch:
 description: dealkfnlja jkadsf fajs ajdsk fhlksjahf sak jfhs adsf
 intro:
   blurbs:
-    - image: /img/apple-touch-icon.jpg
-      text: "fase asefsafe saf saef "
-    - image: /img/tutorials.png
-      text: feasfsafsaefasefasfeasf
+    - image: /img/download.jfif
+      text: эннэ миний зурсан зураг
+    - image: /img/redpin.png
+      text: энэн минй хийсэн лого
   heading: What we offer
   description: Kfasfsaf e farmers efasfsfa
 main:
