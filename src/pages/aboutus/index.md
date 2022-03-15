@@ -41,22 +41,22 @@ pricing:
   plans:
     - plan: Хамгийн шилдэг алба
       price: Маркетингийн алба
-      description: description
+      description: мкт аав бэгү
       items:
         - хөөрхөн заяа
     - plan: удаах шилдэг алба
-      description: dwad
+      description: онха ээж ариука
       price: Олон Нийттэй Харилцах Алба
       items:
         - сахалтай наку
     - plan: нямкагийн алба
       price: Хүний Нөөцийн Алба
-      description: ааөаө
+      description: том дарга нямка
       items:
         - тэнэг түшээ
     - plan: локер авч болох уу
       price: Санхүү Аж Ахуйн Алба
-      description: dwad
+      description: баян ах бэк
       items:
         - хонгорхон хонго
 ---
