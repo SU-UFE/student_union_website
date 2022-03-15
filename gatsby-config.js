@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-flexsearch',
       options: {
-        languages: ['en'],
+        languages: ['mn'],
         type: 'MarkdownRemark',
         fields: [
           {

@@ -1,45 +1,45 @@
-import React from "react";
-import { Link, graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import time from "../../static/img/time.svg";
+import React from 'react'
+import { Link, graphql, StaticQuery } from 'gatsby'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
+import time from '../../static/img/time.svg'
 const EventRoll = ({ data }) => {
   const dateFormatter = (dt) => {
-    dt = new Date(dt);
-    var year = dt.getFullYear();
-    var month = dt.getUTCMonth() + 1;
-    var day = dt.getDate();
+    dt = new Date(dt)
+    var year = dt.getFullYear()
+    var month = dt.getUTCMonth() + 1
+    var day = dt.getDate()
 
-    var time = dt.getHours();
-    var minute = dt.getMinutes();
+    var time = dt.getHours()
+    var minute = dt.getMinutes()
 
-    month = month < 10 ? "0" + month : month;
-    day = day < 10 ? "0" + day : day;
-    time = time < 10 ? "0" + time : time;
-    minute = minute < 10 ? "0" + minute : minute;
+    month = month < 10 ? '0' + month : month
+    day = day < 10 ? '0' + day : day
+    time = time < 10 ? '0' + time : time
+    minute = minute < 10 ? '0' + minute : minute
 
-    return `${year}/${month}/${day} ${time}:${minute}`;
-  };
+    return `${year}/${month}/${day} ${time}:${minute}`
+  }
   const timeFormatter = (dt) => {
-    dt = new Date(dt);
+    dt = new Date(dt)
 
-    var time = dt.getHours();
-    var minute = dt.getMinutes();
+    var time = dt.getHours()
+    var minute = dt.getMinutes()
 
-    time = time < 10 ? "0" + time : time;
-    minute = minute < 10 ? "0" + minute : minute;
+    time = time < 10 ? '0' + time : time
+    minute = minute < 10 ? '0' + minute : minute
 
-    return `${time}:${minute}`;
-  };
-  const { edges: posts } = data.allMarkdownRemark;
+    return `${time}:${minute}`
+  }
+  const { edges: posts } = data.allMarkdownRemark
   return (
-    <div className="columns is-multiline">
+    <div className='columns is-multiline'>
       {posts &&
         posts.map(({ node: post }) => (
-          <div className="is-parent column is-6" key={post.id}>
-            <article className="card">
+          <div className='is-parent column is-6' key={post.id}>
+            <article className='card'>
               <header>
                 {post.frontmatter.featuredimage ? (
-                  <div className="card-image">
+                  <div className='card-image'>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
@@ -54,38 +54,38 @@ const EventRoll = ({ data }) => {
                     />
                   </div>
                 ) : null}
-                <p className="card-content">
+                <p className='card-content'>
                   <Link
-                    className="title has-text-primary is-size-4 is-block"
+                    className='title has-text-primary is-size-4 is-block'
                     to={post.fields.slug}
                   >
                     {post.frontmatter.title}
                   </Link>
                   <span> </span>
                   <span
-                    className="content subtitle is-size-5 "
+                    className='content subtitle is-size-5 '
                     style={{ margin: 0 }}
                   >
                     <img
-                      className="fas fa-lg"
+                      className='fas fa-lg'
                       src={time}
-                      alt="time"
-                      style={{ width: "1em", height: "1em" }}
-                    />{" "}
+                      alt='time'
+                      style={{ width: '1em', height: '1em' }}
+                    />{' '}
                     {dateFormatter(post.frontmatter.startAt)}
                   </span>
                   -
                   <span
-                    className="content subtitle is-size-5 "
+                    className='content subtitle is-size-5 '
                     style={{ margin: 0 }}
                   >
                     {timeFormatter(post.frontmatter.endAt)}
                   </span>
                 </p>
               </header>
-              <p className="content">
+              <p className='content'>
                 <Link
-                  className="level-right button is-link"
+                  className='level-right button is-link'
                   to={post.fields.slug}
                 >
                   Дэлгэрэнгүй унших →
@@ -95,8 +95,8 @@ const EventRoll = ({ data }) => {
           </div>
         ))}
     </div>
-  );
-};
+  )
+}
 
 export default function UfePediaRoll() {
   return (
@@ -118,7 +118,7 @@ export default function UfePediaRoll() {
                   title
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
-                  summary
+
                   startAt
                   endAt
                   featuredimage {
@@ -139,5 +139,5 @@ export default function UfePediaRoll() {
       `}
       render={(data, count) => <EventRoll data={data} count={count} />}
     />
-  );
+  )
 }
