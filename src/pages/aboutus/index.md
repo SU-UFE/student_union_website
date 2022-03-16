@@ -41,23 +41,24 @@ pricing:
   description: СЭЗИС-ийн Оюутны Холбоо ТББ нь дотроо дараах бүтэцтэйгээр Удирдах
     Зөвлөл, Гүйцэтгэх хороо, Хяналтын Зөвлөл, Клубийн зөвлөл бла бла бла . . .
   plans:
-    - plan: Маркетнгийн алба
-      price: МКТА
-      description: мкт аав бэгү
-      items: []
+    - plan: Хамгийн шилдэг алба
+      price: Маркетингийн алба
+      description: description
+      items:
+        - хөөрхөн заяа
     - plan: удаах шилдэг алба
-      description: онха ээж ариука
+      description: dwad
       price: Олон Нийттэй Харилцах Алба
       items:
         - сахалтай наку
     - plan: нямкагийн алба
       price: Хүний Нөөцийн Алба
-      description: том дарга нямка
+      description: ааөаө
       items:
         - тэнэг түшээ
     - plan: локер авч болох уу
       price: Санхүү Аж Ахуйн Алба
-      description: баян ах бэк
+      description: dwad
       items:
         - хонгорхон хонго
 ---
