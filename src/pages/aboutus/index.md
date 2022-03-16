@@ -33,17 +33,18 @@ main:
 testimonials:
   - author: '"Нэгдэж аваад хөгжье, Хөгжиж аваад тэлье"'
     quote: Уриа
+  - quote: Зорлго
+    author: блабал
 full_image: /img/apple-touch-icon.jpg
 pricing:
   heading: БҮТЭЦ
   description: СЭЗИС-ийн Оюутны Холбоо ТББ нь дотроо дараах бүтэцтэйгээр Удирдах
     Зөвлөл, Гүйцэтгэх хороо, Хяналтын Зөвлөл, Клубийн зөвлөл бла бла бла . . .
   plans:
-    - plan: Хамгийн шилдэг алба
-      price: Маркетингийн алба
+    - plan: Маркетнгийн алба
+      price: МКТА
       description: мкт аав бэгү
-      items:
-        - хөөрхөн заяа
+      items: []
     - plan: удаах шилдэг алба
       description: онха ээж ариука
       price: Олон Нийттэй Харилцах Алба
