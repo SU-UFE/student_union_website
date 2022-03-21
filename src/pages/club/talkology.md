@@ -2,7 +2,7 @@
 templateKey: club-post
 title: TALKOLOGY
 date: 2022-03-15T16:39:25.677Z
-description: "Санхүү Эдийг Засгийн Их Сургуулийн оюутнуудад зориулсан англи хэлний "
+description: Санхүү Эдийг Засгийн Их Сургуулийн оюутнуудад зориулсан англи хэлний клуб
 featuredimage: /img/15.png
 ---
 ![](/img/15.png)
