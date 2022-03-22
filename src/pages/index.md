@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
 title: СЭЗИС ОЮУТНЫ ХОЛБОО ТББ
-image: /img/гөу.jpg
-heading: "Төрийн "
+image: /img/nuur.jpg
+heading: 'Төрийн '
 subheading: Төрийн бус байгууллага
 mainpitch:
   title: Оюутны холбоо нь
@@ -15,7 +15,7 @@ description: dealkfnlja jkadsf fajs ajdsk fhlksjahf sak jfhs adsf
 intro:
   blurbs:
     - image: /img/apple-touch-icon.jpg
-      text: "fase asefsafe saf saef "
+      text: 'fase asefsafe saf saef '
     - image: /img/tutorials.png
       text: feasfsafsaefasefasfeasf
   heading: What we offer

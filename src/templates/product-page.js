@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
-import Layout from "../components/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import FullWidthImage from "../components/FullWidthImage";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
+import Layout from '../components/Layout'
+import Features from '../components/Features'
+import Testimonials from '../components/Testimonials'
+import Pricing from '../components/Pricing'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import FullWidthImage from '../components/FullWidthImage'
 
 // eslint-disable-next-line
 export const ProductPageTemplate = ({
@@ -21,50 +21,50 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => {
-  const heroImage = getImage(image) || image;
-  const fullWidthImage = getImage(fullImage) || fullImage;
+  const heroImage = getImage(image) || image
+  const fullWidthImage = getImage(fullImage) || fullImage
 
   return (
-    <div className="content">
+    <div className='content'>
       <FullWidthImage img={heroImage} title={title} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-7 is-offset-1">
-                <h3 className="has-text-weight-semibold is-size-2">
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-7 is-offset-1'>
+                <h3 className='has-text-weight-semibold is-size-2'>
                   {heading}
                 </h3>
                 <p>{description}</p>
               </div>
             </div>
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <Features gridItems={intro.blurbs} /> 
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-3">
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <Features gridItems={intro.blurbs} />
+                <div className='columns'>
+                  <div className='column is-7'>
+                    <h3 className='has-text-weight-semibold is-size-3'>
                       {main.heading}
                     </h3>
                     <p>{main.description}</p>
                   </div>
                 </div>
-                <div className="tile is-ancestor">
-                  <div className="tile is-vertical">
-                    <div className="tile">
-                      <div className="tile is-parent is-vertical">
-                        <article className="tile is-child">
+                <div className='tile is-ancestor'>
+                  <div className='tile is-vertical'>
+                    <div className='tile'>
+                      <div className='tile is-parent is-vertical'>
+                        <article className='tile is-child'>
                           <PreviewCompatibleImage imageInfo={main.image1} />
                         </article>
                       </div>
-                      <div className="tile is-parent">
-                        <article className="tile is-child">
+                      <div className='tile is-parent'>
+                        <article className='tile is-child'>
                           <PreviewCompatibleImage imageInfo={main.image2} />
                         </article>
                       </div>
                     </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
+                    <div className='tile is-parent'>
+                      <article className='tile is-child'>
                         <PreviewCompatibleImage imageInfo={main.image3} />
                       </article>
                     </div>
@@ -76,16 +76,16 @@ export const ProductPageTemplate = ({
           </div>
         </div>
       </section>
-      <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <h2 className="has-text-weight-semibold is-size-2">
+      <FullWidthImage img={fullWidthImage} imgPosition={'bottom'} />
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <h2 className='has-text-weight-semibold is-size-2'>
                   {pricing.heading}
                 </h2>
-                <p className="is-size-5">{pricing.description}</p>
+                <p className='is-size-5'>{pricing.description}</p>
                 <Pricing data={pricing.plans} />
               </div>
             </div>
@@ -93,8 +93,8 @@ export const ProductPageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -118,10 +118,10 @@ ProductPageTemplate.propTypes = {
     description: PropTypes.string,
     plans: PropTypes.array,
   }),
-};
+}
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -137,8 +137,8 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-  );
-};
+  )
+}
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
@@ -146,9 +146,9 @@ ProductPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default ProductPage;
+export default ProductPage
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
@@ -225,4 +225,4 @@ export const productPageQuery = graphql`
       }
     }
   }
-`;
+`
