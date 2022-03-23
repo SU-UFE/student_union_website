@@ -8,13 +8,10 @@ description: Санхүү Эдийн Засгийн Их Сургуулийн О
   Төрийн Бус Байгууллага
 intro:
   blurbs:
-    - image: /img/1.jpg
-      text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac
-        gravida tortor, vel suscipit turpis. Vestibulum nec augue id elit
-  heading: шөнийн 4 цагт мэдээг оруулсныг миьн үнэлээд нэг үнсэнэ үү
-  description: |
-    өурахрарр
+    - image: /img/apple-touch-icon.jpg
+      text: Оюутны холбооны үндсэн лого
+  heading: Intro
+  description: Intro
 main:
   heading: ТАНИЛЦУУЛГА
   description: >+
