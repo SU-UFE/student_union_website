@@ -25,10 +25,10 @@ main:
     image: /img/image9.png
   image2:
     alt: grdg
-    image: /img/img_0011.jpg
+    image: /img/267768750_2078591212306946_7096577910925588386_n.jpg
   image3:
     alt: dgdg
-    image: /img/267768750_2078591212306946_7096577910925588386_n.jpg
+    image: /img/butets.png
 testimonials:
   - author: '"Өөрийгөө сэрээж чадсан, нийгмийг соён гэгээрүүлэх үйлсэд хувь нэмрээ
       оруулахуйц иргэн болон төлөвшихөд оюутнуудаа дэмжин ажиллах”'
