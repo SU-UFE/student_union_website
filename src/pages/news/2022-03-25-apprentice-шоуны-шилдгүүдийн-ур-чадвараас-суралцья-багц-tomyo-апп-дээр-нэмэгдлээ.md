@@ -5,7 +5,7 @@ title: '"Apprentice шоуны шилдгүүдийн ур чадвараас с
 date: 2022-03-25T11:06:58.850Z
 description: Энэхүү 3 хичээлийг хамтад нь 89,900₮-р авах боломжийг ердөө 5
   хоногийн хугацаанд олгож байна. Та яараарай.
-featuredpost: "false"
+featuredpost: false
 featuredimage: /img/unnamed.png
 ---
 Apprentice шоуны шилдгүүдийн ур чадвараас суралцья 
