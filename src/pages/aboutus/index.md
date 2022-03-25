@@ -3,7 +3,7 @@ heading: СЭЗИС-ийн Оюутны Холбоо ГҮТББ
 path: /aboutus
 templateKey: product-page
 title: Бидний тухай
-image: /img/267768750_2078591212306946_7096577910925588386_n.jpg
+image: /img/ufe.jpg
 description: Санхүү Эдийн Засгийн Их Сургуулийн Оюутны Холбоо Гишүүддээ Үйлчлэх
   Төрийн Бус Байгууллага
 intro:
@@ -25,7 +25,7 @@ main:
     image: /img/image9.png
   image2:
     alt: grdg
-    image: /img/267768750_2078591212306946_7096577910925588386_n.jpg
+    image: /img/dsc_0564.jpg
   image3:
     alt: dgdg
     image: /img/butets.png
