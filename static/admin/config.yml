@@ -1,141 +1,141 @@
 backend:
   name: git-gateway
-  repo: Sambaa747/student_union_web
+  repo: SU-UFE/stundent_union_website
   branch: master
   # prop base url
   # base_url: http://202.131.4.61/
 
   # dev base url
-  base_url: http://localhost:8000/
+  base_url: https://su-ufe.mn
   commit_messages:
-    create: "Create {{collection}} “{{slug}}”"
-    update: "Update {{collection}} “{{slug}}”"
-    delete: "Delete {{collection}} “{{slug}}”"
-    uploadMedia: "[skip ci] Upload “{{path}}”"
-    deleteMedia: "[skip ci] Delete “{{path}}”"
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
 local_backend: true
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Мэдээ"
-    folder: "src/pages/news"
+  - name: 'blog'
+    label: 'Мэдээ'
+    folder: 'src/pages/news'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'blog-post',
         }
-      - { label: "Гарчиг", name: "title", widget: "string" }
-      - { label: "Нийтэлсэн огноо", name: "date", widget: "datetime" }
-      - { label: "Тайлбар", name: "description", widget: "text" }
+      - { label: 'Гарчиг', name: 'title', widget: 'string' }
+      - { label: 'Нийтэлсэн огноо', name: 'date', widget: 'datetime' }
+      - { label: 'Тайлбар', name: 'description', widget: 'text' }
       - {
-          label: "Арын фоныг өөрчлөх",
-          name: "featuredpost",
-          widget: "boolean",
-          default: "false",
+          label: 'Арын фоныг өөрчлөх',
+          name: 'featuredpost',
+          widget: 'boolean',
+          default: 'false',
         }
       - {
-          label: "Нүүх хуудсан харагдах зураг",
-          name: "featuredimage",
+          label: 'Нүүх хуудсан харагдах зураг',
+          name: 'featuredimage',
           widget: image,
         }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Тагууд", name: "tags", widget: "list" }
-  - name: "pdf"
-    label: "Бичиг баримтууд"
-    folder: "src/pages/documents"
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Тагууд', name: 'tags', widget: 'list', required: true }
+  - name: 'pdf'
+    label: 'Бичиг баримтууд'
+    folder: 'src/pages/documents'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
       - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "file-post",
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'file-post',
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
       - {
-          label: "Manual PDF",
-          name: "manual_pdf",
-          widget: "file",
-          default: "pdf өргөтгөлтэйгөөр оруулна уу",
+          label: 'Manual PDF',
+          name: 'manual_pdf',
+          widget: 'file',
+          default: 'pdf өргөтгөлтэйгөөр оруулна уу',
         }
-  - name: "events"
-    label: "Арга хэмжээнүүд"
-    folder: "src/pages/event"
+  - name: 'events'
+    label: 'Арга хэмжээнүүд'
+    folder: 'src/pages/event'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "event-post",
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'event-post',
         }
-      - { label: "Гарчиг", name: "title", widget: "string" }
-      - { label: "Эхлэх хугацаа", name: "startAt", widget: "datetime" }
-      - { label: "Дуусах хугацаа", name: "endAt", widget: "datetime" }
-      - { label: "Зураг", name: "featuredimage", widget: "image" }
-      - { label: "Дэлгэрэнгүй", name: "body", widget: "markdown" }
+      - { label: 'Гарчиг', name: 'title', widget: 'string' }
+      - { label: 'Эхлэх хугацаа', name: 'startAt', widget: 'datetime' }
+      - { label: 'Дуусах хугацаа', name: 'endAt', widget: 'datetime' }
+      - { label: 'Зураг', name: 'featuredimage', widget: 'image' }
+      - { label: 'Дэлгэрэнгүй', name: 'body', widget: 'markdown' }
       - {
-          label: "color",
-          name: "color",
-          widget: "select",
-          options: ["green", "red", "blue", "orange", "black", "white"],
+          label: 'color',
+          name: 'color',
+          widget: 'select',
+          options: ['green', 'red', 'blue', 'orange', 'black', 'white'],
         }
-  - name: "club"
-    label: "Клубууд"
-    folder: "src/pages/club"
+  - name: 'club'
+    label: 'Клубууд'
+    folder: 'src/pages/club'
     create: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     fields:
       - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "club-post",
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'club-post',
         }
-      - { label: "Клубын нэр", name: "title", widget: "string" }
-      - { label: "Огноо", name: "date", widget: "datetime" }
-      - { label: "Товч тайлбар", name: "description", widget: "text" }
-      - { label: "Зураг", name: "featuredimage", widget: image }
-      - { label: "Дэлгэрэнгүй", name: "body", widget: "markdown" }
-  - name: "ufepedia"
-    label: "UFEpedia"
-    folder: "src/pages/ufepedia"
+      - { label: 'Клубын нэр', name: 'title', widget: 'string' }
+      - { label: 'Огноо', name: 'date', widget: 'datetime' }
+      - { label: 'Товч тайлбар', name: 'description', widget: 'text' }
+      - { label: 'Зураг', name: 'featuredimage', widget: image }
+      - { label: 'Дэлгэрэнгүй', name: 'body', widget: 'markdown' }
+  - name: 'ufepedia'
+    label: 'UFEpedia'
+    folder: 'src/pages/ufepedia'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "ufe-post",
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'ufe-post',
         }
-      - { label: "Гарчиг", name: "title", widget: "string" }
-      - { label: "Огноо", name: "date", widget: "datetime" }
-      - { label: "Товч тайлбар", name: "description", widget: "text" }
-      - { label: "Зураг", name: "featuredimage", widget: image }
-      - { label: "Дэлгэрэнгүй", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
+      - { label: 'Гарчиг', name: 'title', widget: 'string' }
+      - { label: 'Огноо', name: 'date', widget: 'datetime' }
+      - { label: 'Товч тайлбар', name: 'description', widget: 'text' }
+      - { label: 'Зураг', name: 'featuredimage', widget: image }
+      - { label: 'Дэлгэрэнгүй', name: 'body', widget: 'markdown' }
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/pages/index.md"
-        label: "Нүүр хуудас"
-        name: "index"
+      - file: 'src/pages/index.md'
+        label: 'Нүүр хуудас'
+        name: 'index'
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'index-page',
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
@@ -212,27 +212,27 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/holbogdoh/index.md"
-        label: "Холбогдох"
-        name: "about"
+      - file: 'src/pages/holbogdoh/index.md'
+        label: 'Холбогдох'
+        name: 'about'
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about-page',
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/aboutus/index.md"
-        label: "Бидний тухай"
-        name: "products"
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - file: 'src/pages/aboutus/index.md'
+        label: 'Бидний тухай'
+        name: 'products'
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "product-page",
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'product-page',
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
