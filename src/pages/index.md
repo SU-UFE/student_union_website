@@ -11,15 +11,15 @@ mainpitch:
     намраас эхлэн “Оюутны Холбоо” ТББ гэсэн статустайгаар одоог хүртэл үйл
     ажиллагаагаа явуулсаар байна. 2021 оны байдлаар 45 албан хаагчидтайгаар үйл
     ажиллагаа явуулж байна.
-description: dealkfnlja jkadsf fajs ajdsk fhlksjahf sak jfhs adsf
+description: "1"
 intro:
   blurbs:
     - image: /img/1.jpg
-      text: "fase asefsafe saf saef "
+      text: "2"
     - image: /img/1.jpg
-      text: feasfsafsaefasefasfeasf
+      text: "1"
   heading: What we offer
-  description: Kfasfsaf e farmers efasfsfa
+  description: "2"
 main:
   heading: Lorem ipsum dolor
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -34,8 +34,8 @@ main:
     image: /img/products-grid3.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/flavor_wheel.jpg
+    image: /img/1.jpg
   image3:
     alt: jujg
-    image: /img/products-full-width.jpg
+    image: /img/1.jpg
 ---
