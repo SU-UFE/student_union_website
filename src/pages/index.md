@@ -14,10 +14,11 @@ mainpitch:
 description: "1"
 intro:
   blurbs:
-    - image: /img/1.jpg
-      text: "2"
-    - image: /img/1.jpg
-      text: "1"
+    - image: /img/image00001.jpeg
+      text: 2022-2023 оны хичээлийн жилийн СЭЗИС-ийн Оюутны Холбоо ТББ-ын Удирдах
+        Зөвлөлийн гишүүд
+    - image: /img/logo.png
+      text: СЭЗИС-ийн Оюутны Холбоо ТББ-ын үндсэн лого
   heading: What we offer
   description: "2"
 main:
@@ -34,7 +35,7 @@ main:
     image: /img/products-grid3.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/1.jpg
+    image: /img/image00001.jpeg
   image3:
     alt: jujg
     image: /img/1.jpg
