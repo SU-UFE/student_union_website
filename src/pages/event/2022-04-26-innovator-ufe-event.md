@@ -1,6 +1,6 @@
 ---
 templateKey: event-post
-title: Innovator UFE event
+title: Innovator UFE
 startAt: 2022-04-27T02:00:00.000Z
 endAt: 2022-04-27T10:00:39.070Z
 featuredimage: /img/279109544_937392090289731_6978605538864726151_n.jpg
