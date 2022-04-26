@@ -23,11 +23,9 @@ color: orange
 * Open mic (Cheer Up)
 * Дэвтрийн дуудлага худалдаа (Cheer Up)
 
-### Хамтран зохион байгуулагч: 
+### Хамтран зохион байгуулагч:
 
 Monarty Virtual Gallery ажилл Монголын хамгийн анхны виртуал галерей юм. ([https://monarty.mn/en/](https://monarty.mn/en/?fbclid=IwAR3505Ik6vSK5j6oRaVQ0A5KcyxNdTp5aKdjMoD-AWl3l7YfAB_7HP5ivw4))
-
-Тасалбарыг Б өргөтгөлөөс авах боломжтой.
 
 **Opening: 10am**
 
