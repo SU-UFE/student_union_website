@@ -38,7 +38,7 @@ collections:
           label: 'Арын фоныг өөрчлөх',
           name: 'featuredpost',
           widget: 'boolean',
-          default: 'false',
+          default: false,
         }
       - {
           label: 'Нүүх хуудсан харагдах зураг',
